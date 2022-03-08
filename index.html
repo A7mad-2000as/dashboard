@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="search-and-control">
             <form action="#" method="get" class="search">
-                <div class="search">
-                    <label for="search">
-                        <img src="assets/magnify.svg" alt="search">
-                    </label>
-                    <input type="search" id="search">
-                </div>
+                <label for="search">
+                    <img src="assets/magnify.svg" alt="search">
+                </label>
+                <input type="search" id="search">
             </form>
             <div class="user-control">
-                <a href=""><img src="assets/bell-ring-outline.svg" alt="notifications"></a>
-                <img src="assets/avatar.jpg" alt="avatar">
-                <a href="" class="username">Morgan Oakley</a>
+                <div class="notifications"><img src="assets/bell-ring-outline.svg" alt="notifications"></div>
+                <img src="assets/avatar.jpg" alt="avatar" class="avatar">
+                <div class="username">Morgan Oakley</div>
             </div>
         </div>
         <div class="greeting-and-buttons">
             <div class="greeting">
-                <img src="assets/avatar.jpg" alt="avatar">
+                <img src="assets/avatar.jpg" alt="avatar" class="avatar">
                 <p>Hi there,</p>
                 <p>Morgan Oakley (@morgan)</p>
             </div>
@@ -39,49 +43,72 @@
 
     <nav>
         <div class="main-title">
-            <div class="title-icon"></div>
+            <div class="title-icon">
+                <div class="inner-icon-div"></div>
+                <div class="inner-icon-div"></div>
+                <div class="inner-icon-div"></div>
+                <div class="inner-icon-div"></div>
+            </div>
             <h1>Dashboard</h1>
         </div>
         <ul class="main-nav">
-            <li class="nav-item">
-                <img src="assets/home.png" alt="home-icon" class="nav-item-icon">
-                <div class="nav-item-text">Home</div>
-            </li>
-            <li class="nav-item">
-                <img src="assets/account-details.png" alt="profile-icon" class="nav-item-icon">
-                <div class="nav-item-text">Profile</div>
-            </li>
-            <li class="nav-item">
-                <img src="assets/message.png" alt="messages-icon" class="nav-item-icon">
-                <div class="nav-item-text">Messages</div>
-            </li>
-            <li class="nav-item">
-                <img src="assets/clock.png" alt="history-icon" class="nav-item-icon">
-                <div class="nav-item-text">History</div>
-            </li>
-            <li class="nav-item">
-                <img src="assets/file-multiple.png" alt="tasks-icon" class="nav-item-icon">
-                <div class="nav-item-text">Tasks</div>
-            </li>
-            <li class="nav-item">
-                <img src="assets/account-group.png" alt="communities-icon" class="nav-item-icon">
-                <div class="nav-item-text">Communities</div>
-            </li>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/home.png" alt="home-icon" class="nav-item-icon">
+                    <div class="nav-item-text">Home</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/account-details.png" alt="profile-icon" class="nav-item-icon">
+                    <div class="nav-item-text">Profile</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/message.png" alt="messages-icon" class="nav-item-icon">
+                    <div class="nav-item-text">Messages</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/clock.png" alt="history-icon" class="nav-item-icon">
+                    <div class="nav-item-text">History</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/file-multiple.png" alt="tasks-icon" class="nav-item-icon">
+                    <div class="nav-item-text">Tasks</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/account-group.png" alt="communities-icon" class="nav-item-icon">
+                    <div class="nav-item-text">Communities</div>
+                </li>
+            </a>
         </ul>
 
         <ul class="secondary-nav">
-            <li class="nav-item">
-                <img src="assets/cog.png" alt="settings-icon" class="nav-item-icon">
-                <div class="nav-item-text">Settings</div>
-            </li>
-            <li class="nav-item">
-                <img src="assets/help-box.png" alt="support-icon" class="nav-item-icon">
-                <div class="nav-item-text">Support</div>
-            </li>
-            <li class="nav-item">
-                <img src="assets/marker-check.png" alt="privcy-icon" class="nav-item-icon">
-                <div class="nav-item-text">Privacy</div>
-            </li>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/cog.png" alt="settings-icon" class="nav-item-icon">
+                    <div class="nav-item-text">Settings</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/help-box.png" alt="support-icon" class="nav-item-icon">
+                    <div class="nav-item-text">Support</div>
+                </li>
+            </a>
+            <a href="">
+                <li class="nav-item">
+                    <img src="assets/marker-check.png" alt="privcy-icon" class="nav-item-icon">
+                    <div class="nav-item-text">Privacy</div>
+                </li>
+            </a>
         </ul>
     </nav>
 
@@ -92,7 +119,9 @@
                 <div class="card">
                     <div class="description">
                         <h3>Super Cool Project</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae ipsum enim alias sequi, soluta dolore cumque quidem perspiciatis sunt fugit magni deserunt, deleniti adipisci quos sed repellendus impedit quaerat!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae ipsum enim alias sequi,
+                            soluta dolore cumque quidem perspiciatis sunt fugit magni deserunt, deleniti adipisci quos
+                            sed repellendus impedit quaerat!</p>
                     </div>
                     <div class="card-buttons">
                         <img src="assets/star-plus-outline.svg" alt="like" class="card-button">
@@ -103,7 +132,9 @@
                 <div class="card">
                     <div class="description">
                         <h3>Less Cool Project</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugit magnam nisi voluptate! Libero, mollitia. Doloremque, iusto! Facilis optio laboriosam, ipsam eum nam culpa est nesciunt eius amet asperiores neque.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugit magnam nisi voluptate!
+                            Libero, mollitia. Doloremque, iusto! Facilis optio laboriosam, ipsam eum nam culpa est
+                            nesciunt eius amet asperiores neque.</p>
                     </div>
                     <div class="card-buttons">
                         <img src="assets/star-plus-outline.svg" alt="like" class="card-button">
@@ -114,7 +145,9 @@
                 <div class="card">
                     <div class="description">
                         <h3>Impossible App</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita impedit totam veritatis, sapiente dicta culpa voluptatem. Distinctio error aut necessitatibus odit, fugit possimus vitae officia magnam eligendi atque nulla.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid expedita impedit totam
+                            veritatis, sapiente dicta culpa voluptatem. Distinctio error aut necessitatibus odit, fugit
+                            possimus vitae officia magnam eligendi atque nulla.</p>
                     </div>
                     <div class="card-buttons">
                         <img src="assets/star-plus-outline.svg" alt="like" class="card-button">
@@ -125,7 +158,9 @@
                 <div class="card">
                     <div class="description">
                         <h3>Easy Peasy App</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe est iste voluptas. Saepe, inventore! Alias cumque, repellendus corporis aspernatur assumenda esse distinctio voluptatum voluptatibus suscipit quod molestias tenetur, facere odit.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe est iste voluptas. Saepe,
+                            inventore! Alias cumque, repellendus corporis aspernatur assumenda esse distinctio
+                            voluptatum voluptatibus suscipit quod molestias tenetur, facere odit.</p>
                     </div>
                     <div class="card-buttons">
                         <img src="assets/star-plus-outline.svg" alt="like" class="card-button">
@@ -136,7 +171,9 @@
                 <div class="card">
                     <div class="description">
                         <h3>Ad Blocker</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo saepe tempora eius quos reprehenderit consequuntur esse sed, neque doloremque tenetur quasi assumenda eveniet quia quas veritatis sequi libero. Dolores.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo saepe tempora eius quos
+                            reprehenderit consequuntur esse sed, neque doloremque tenetur quasi assumenda eveniet quia
+                            quas veritatis sequi libero. Dolores.</p>
                     </div>
                     <div class="card-buttons">
                         <img src="assets/star-plus-outline.svg" alt="like" class="card-button">
@@ -147,7 +184,9 @@
                 <div class="card">
                     <div class="description">
                         <h3>Money Maker</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, rerum perspiciatis expedita magnam, dolores quos nam cupiditate nihil dolore quae ea vero qui, facere ad modi ipsa molestias in. Atque?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, rerum perspiciatis expedita
+                            magnam, dolores quos nam cupiditate nihil dolore quae ea vero qui, facere ad modi ipsa
+                            molestias in. Atque?</p>
                     </div>
                     <div class="card-buttons">
                         <img src="assets/star-plus-outline.svg" alt="like" class="card-button">
@@ -160,47 +199,60 @@
 
         <aside class="announcements">
             <h2>Announcements</h2>
-            <ul class="announcment-list">
-                <li class="announcment">
+            <ul class="announcement-list">
+                <li class="announcement">
                     <h3>Site Maintenance</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatibus! Impedit temporibus beatae nulla earum? Deserunt nostrum pariatur quia, praesentium non, soluta assumenda error accusamus quidem minima perspiciatis esse molestias.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatibus! Impedit temporibus
+                        beatae nulla earum? </p>
                 </li>
-                <li class="announcment">
+                <hr>
+                <li class="announcement">
                     <h3>Community Share Day</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatibus! Impedit temporibus beatae nulla earum? Deserunt nostrum pariatur quia, praesentium non, soluta assumenda error accusamus quidem minima perspiciatis esse molestias.</p>
+                    <p>excepturi minima doloribus eveniet rerum accusamus tempore iusto eaque dolore impedit sapiente!
+                    </p>
                 </li>
-                <li class="announcment">
+                <hr>
+                <li class="announcement">
                     <h3>Updated Pricay Policy</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptatibus! Impedit temporibus beatae nulla earum? Deserunt nostrum pariatur quia, praesentium non, soluta assumenda error accusamus quidem minima perspiciatis esse molestias.</p>
+                    <p>iure neque beatae aperiam voluptate voluptates vero possimus odit nemo!</p>
                 </li>
             </ul>
         </aside>
 
         <aside class="trending">
-            <h3>Trending</h3>
+            <h2>Trending</h2>
             <ul class="trending-list">
                 <li>
-                    <img src="" alt="" class="trending-icon">
-                    <p class="trending-username">@tegan</p>
-                    <p class="trending-description">World Peace Builder</p>
+                    <img src="assets/secondary-avatar-1.png" alt="avatar" class="avatar">
+                    <div class="trending-description">
+                        <p class="trending-username">@tegan</p>
+                        <p class="trending-description">World Peace Builder</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="" alt="" class="trending-icon">
-                    <p class="trending-username">@morgan</p>
-                    <p class="trending-description">Super Cool Project</p>
+                    <img src="assets/secondary-avatar-2.png.png" alt="avatar" class="avatar">
+                    <div class="trending-description">
+                        <p class="trending-username">@morgan</p>
+                        <p class="trending-description">Super Cool Project</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="" alt="" class="trending-icon">
-                    <p class="trending-username">@kendall</p>
-                    <p class="trending-description">Life Changing App</p>
+                    <img src="assets/secondary-avatar-3.jpeg" alt="avatar" class="avatar">
+                    <div class="trending-description">
+                        <p class="trending-username">@kendall</p>
+                        <p class="trending-description">Life Changing App</p>
+                    </div>
                 </li>
                 <li>
-                    <img src="" alt="" class="trending-icon">
-                    <p class="trending-username">@alex</p>
-                    <p class="trending-description">No Traffic Maker</p>
+                    <img src="assets/secondary-avatar-3.png" alt="avatar" class="avatar">
+                    <div class="trending-description">
+                        <p class="trending-username">@alex</p>
+                        <p class="trending-description">No Traffic Maker</p>
+                    </div>
                 </li>
             </ul>
         </aside>
     </main>
 </body>
+
 </html>
